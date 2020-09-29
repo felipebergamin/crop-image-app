@@ -13,6 +13,7 @@ document.getElementById("select-image").addEventListener("click", () => {
 window.addEventListener("DOMContentLoaded", () => {
   photoFile.addEventListener("change", () => {
     let file = photoFile.files.item(0);
+    photoName = file.name;
 
     // read file
     let reader = new FileReader();
